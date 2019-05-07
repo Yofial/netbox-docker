@@ -24,18 +24,14 @@ The application will be available after a few minutes.
 Use `docker-compose port nginx 8080` to find out where to connect to.
 
 ```Shell
-echo "http://$(docker-compose port nginx 8080)/"
-```
+$echo "http://$(docker-compose port nginx 8080)/"
 http://0.0.0.0:32768/
 
 # Open netbox in your default browser on macOS:
-```Shell 
-open "http://$(docker-compose port nginx 8080)/"
-```
+$open "http://$(docker-compose port nginx 8080)/"
 
 # Open netbox in your default browser on (most) linuxes:
-```Shell
-xdg-open "http://$(docker-compose port nginx 8080)/" &>/dev/null &
+$xdg-open "http://$(docker-compose port nginx 8080)/" &>/dev/null &
 ```
 
 Alternatively, use something like [Reception][docker-reception] to connect to _docker-compose_ projects.
